@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Division - Tsateng Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+	        /* Touch improvements */
+	        .project-card, .service-item, .purchase-btn, .cta-btn {
+	            cursor: pointer;
+	            transition: transform 0.2s ease;
+	        }
+	        
+	        .project-card:active, .service-item:active, .purchase-btn:active, .cta-btn:active {
+	            transform: scale(0.98);
+	        }
+	        
+	        /* Audio player mobile improvements */
+	        audio {
+	            width: 100% !important;
+	        }
+    </style>
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient"></div>
+
+    <!-- Header with Navigation -->
+    <header class="contact-header">
+        <nav class="main-nav contact-nav">
+            <!-- Logo as homepage link -->
+            <a href="home.html" class="logo-link">
+                <img src="images/TSATENG LOGO 4.png" alt="Tsateng Productions Logo" class="contact-logo">
+            </a>
+            
+            <!-- Top bar with buttons -->
+            <div class="nav-top">
+                <div class="nav-buttons">
+                    <a href="home.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="music-main">
+        <div class="music-container">
+            <h1 class="music-title">Music Division</h1>
+            
+            <!-- Introduction Section -->
+            <div class="music-intro">
+                <div class="intro-card">
+                    <h2>Creating Musical Excellence</h2>
+                    <p>At Tsateng Productions, our music division specializes in discovering raw talent and transforming it into professional artistry. From talent scouting and professional recording to music publishing and album production, we provide comprehensive services that help artists reach their full potential.</p>
+                    <div class="services-highlight">
+                        <div class="service-item"> 🎤 Talent Scouting & Development</div>
+
+                        <div class="service-item"> 📀 Music Publishing</div>
+                        <div class="service-item"> 🎵 Album Production</div>
+                        <div class="service-item"> 🙏 Gospel Music Ministry</div>
+                        <div class="service-item"> 🎼 Live Event Production</div>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(123, 12, 12, 0.1); border-radius: 8px;">
+                        <p style="margin: 0; color: #7b0c0c; font-weight: bold;">
+                            📧 Contact: info@tsatengproductions.org | 
+                            📞 Phone: 064 653 4658
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Projects Grid -->
+            <div class="projects-section">
+                <h2 class="projects-title">Featured Projects</h2>
+                <p class="projects-subtitle">Showcasing our diverse portfolio of musical talent and ministry</p>
+                
+                <!-- Projects Grid - 3x2 Layout -->
+                <div class="projects-grid two-columns">
+                    <!-- Project 1: Duvha - Uthandakhona -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Duvha uthanda khona.jpg" alt="Uthandakhona Album Cover" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Uthandakhona</h3>
+                            <p class="project-artist">Duvha</p>
+                            <p class="project-genre">Gospel</p>
+                            <p class="project-desc">A powerful gospel album that blends traditional worship with contemporary sounds, showcasing deep spiritual themes and musical excellence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: MSoul - My Lady -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Msoul My lady.jpg" alt="My Lady Album Cover" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">My Lady</h3>
+                            <p class="project-artist">MSoul</p>
+                            <p class="project-genre">Afro Soul</p>
+                            <p class="project-desc">Smooth afro soul melodies that tell stories of love and life, featuring rich instrumentation and heartfelt vocals.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: DEE-Tri - Kangakanani -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Dee-tri Kangakanani.jpg" alt="Kangakanani Album Cover" class="project-img">
+                            <div class="physical-cd-badge">CD Available</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Kangakanani</h3>
+                            <p class="project-artist">DEE-Tri</p>
+                            <p class="project-genre">Afro Pop</p>
+                            <p class="project-desc">An energetic afro pop album that celebrates life and culture, available in both digital and physical CD formats.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Kamo - Afro Soul -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Kamo.jpg" alt="Kamo Album Cover" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">Afro Soul Project</h3>
+                            <p class="project-artist">Kamo</p>
+                            <p class="project-genre">Afro Soul</p>
+                            <p class="project-desc">Soulful afro beats combined with meaningful lyrics, representing the fresh new sound of contemporary African music.</p>
+                            
+                            <!-- Audio Player Section -->
+                            <div class="audio-player-section">
+                                <h4>Featured Track: "Kenyaka wena"</h4>
+                                
+                                <!-- Audio Visualizer -->
+                                <div class="audio-visualizer">
+                                    <canvas id="visualizerCanvas"></canvas>
+                                </div>
+                                
+                                <!-- Single Audio Player -->
+                                <div class="audio-player">
+                                    <audio id="kamoAudio" controls style="width: 100%">
+                                        <source src="audio/kenyaka wena.mp3" type="audio/mpeg">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                                
+                                <!-- Purchase Options -->
+                                <div class="purchase-options">
+                                    <div id="kamoPaymentForm" style="display:none; margin-top: 15px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                                        <h4>Digital Download - R30</h4>
+                                        <form id="kamoForm">
+                                            <div class="form-group">
+                                                <label for="kamoName">Full Name *</label>
+                                                <input type="text" id="kamoName" name="name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="kamoEmail">Email Address *</label>
+                                                <input type="email" id="kamoEmail" name="email" required>
+                                            </div>
+                                            <button type="submit" class="purchase-btn" id="kamoSubmitBtn">Proceed to Payment</button>
+                                            <div id="kamoMessage" style="margin-top: 10px;"></div>
+                                        </form>
+                                    </div>
+                                    <h5>Purchase This Track</h5>
+                                    <div class="purchase-buttons">
+                                        <button class="purchase-btn digital" onclick="showKamoPaymentForm()">
+                                            <span class="purchase-type">Digital Download</span>
+                                            <span class="purchase-price">R30</span>
+                                        </button>
+                                    </div>
+                                    <p class="purchase-note">🎵 Preview available - Full download after purchase</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW PROJECT 5: For Christ Worship - Album Launch -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/group photo.jpg" alt="For Christ Worship Event" class="project-img">
+                            <div class="physical-cd-badge">Album Launch</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-name">For Christ Worship</h3>
+                            <p class="project-artist">Worship Collective</p>
+                            <p class="project-genre">Worship & Praise</p>
+                            <p class="project-desc">Experience the power of collective worship with our live worship team. Featuring uplifting praise music and spiritual renewal experiences.</p>
+                            
+                            <!-- Album Launch Details -->
+                            <div class="event-highlight">
+                                <h4>🎵 "Songs of Redemption" Album Launch</h4>
+                                <p class="event-date"><strong>March 28, 2026</strong></p>
+                                <p class="event-location">Oukerk Klerksdorp</p>
+                                <p class="event-album"><strong>Album:</strong> Songs of Redemption (Live Recording)</p>
+                                <p class="event-recorded"><strong>Recorded:</strong> October 4, 2025 at Rio Casino</p>
+                                
+                                <!-- Quick Ticket Info -->
+                                <div class="ticket-info">
+                                    <p class="ticket-price">Tickets: R200</p>
+                                    <a href="for_christ_worship.html" class="event-link">Get Tickets & Info →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            <!-- Services Offered -->
+            <div class="services-section">
+                <h2 class="section-heading">Our Music Services</h2>
+                <div class="services-grid">
+                    <div class="service-category">
+                        <h3>🎤 Artist Development</h3>
+                        <ul>
+                            <li>Talent scouting & discovery</li>
+                            <li>Vocal coaching & training</li>
+                            <li>Songwriting assistance</li>
+                            <li>Performance coaching</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+	                        <h3>🎧 Production & Mastering</h3>
+	                        <ul>
+	                            <li>Music production & arrangement</li>
+	                            <li>Mixing & mastering</li>
+	                            <li>Voice-over recording</li>
+	                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3>📀 Publishing & Distribution</h3>
+                        <ul>
+                            <li>Music publishing</li>
+                            <li>Digital distribution</li>
+                            <li>CD duplication</li>
+                            <li>Album artwork design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3>🎵 Events & Ministry</h3>
+                        <ul>
+                            <li>For Christ Worship ministry</li>
+                            <li>Live event production</li>
+                            <li>Concert organization</li>
+                            <li>Album launch events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Section - Wide Version -->
+            <div class="cta-section-wide">
+                <div class="cta-card-wide">
+                    <h2>Ready to Start Your Musical Journey?</h2>
+                    <p>Whether you're an emerging artist or an established musician, Tsateng Productions provides the professional support and expertise you need to bring your musical vision to life. From gospel music ministry through For Christ Worship to contemporary music production, we're here to help.</p>
+                    <div class="cta-buttons">
+                        <a href="contact_us.html?department=music" class="cta-btn primary">Contact Music Division</a>
+                        <a href="for_christ_worship.html" class="cta-btn secondary">For Christ Worship Info</a>
+                        <a href="tel:0646534658" class="cta-btn" style="background: #28a745; color: white;">Call: 064 653 4658</a>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(123, 12, 12, 0.1); border-radius: 8px;">
+                        <p style="margin: 0; color: #7b0c0c;">
+                            <strong>📧 Music Division Email:</strong> info@tsatengproductions.org<br>
+                            <strong>📍 Studio Location:</strong> 25 Mafohla Street, Kanana, Orkney, 2619
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <div class="division-links">
+                        <a href="music_division.html">Music Division</a>
+                        <a href="transport.html">Transport Division</a>
+                        <a href="supplies.html">Supply Division</a>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="for_christ_worship.html" style="color: #cccccc; text-decoration: none; font-weight: bold;">
+                            🎵 For Christ Worship
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <div class="company-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact_us.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    Tsateng Productions Pty Ltd
+                </div>
+                <div class="registration">
+                    Registration Number: 2019/380354/07
+                </div>
+                <div class="contact-info" style="margin-top: 10px; font-size: 0.9rem; text-align: center;">
+                    <p>📞 064 653 4658 | 📧 fcw@tsatengproductions.org (Music)</p>
+                    <p>📍 25 Mafohla Street, Kanana, Orkney, 2619</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simplified Audio Player with Visualizer
+        const audio = document.getElementById('kamoAudio');
+        const canvas = document.getElementById('visualizerCanvas');
+        
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+            let animationId;
+            let isPlaying = false;
+
+            // Set canvas dimensions
+            function setCanvasSize() {
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            }
+            setCanvasSize();
+            window.addEventListener('resize', setCanvasSize);
+
+            // Simple animated visualizer
+            function drawVisualizer() {
+                // Clear canvas
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                
+                const barCount = 32;
+                const barWidth = canvas.width / barCount;
+                
+                for(let i = 0; i < barCount; i++) {
+                    // Create a wave pattern based on time and position
+                    const time = audio.currentTime || 0;
+                    const wave = Math.sin(time * 2 + i * 0.3) * 0.5 + 0.5;
+                    const noise = Math.random() * 0.3;
+                    const height = (wave + noise) * canvas.height * 0.8;
+                    
+                    // Create gradient for bars
+                    const gradient = ctx.createLinearGradient(0, canvas.height - height, 0, canvas.height);
+                    gradient.addColorStop(0, '#7b0c0c');
+                    gradient.addColorStop(0.7, '#ff6b6b');
+                    gradient.addColorStop(1, '#ffffff');
+                    
+                    ctx.fillStyle = gradient;
+                    ctx.fillRect(i * barWidth, canvas.height - height, barWidth - 2, height);
+                }
+                
+                if (isPlaying) {
+                    animationId = requestAnimationFrame(drawVisualizer);
+                }
+            }
+
+            // Play event
+            audio.addEventListener('play', () => {
+                isPlaying = true;
+                drawVisualizer();
+            });
+
+            // Pause event
+            audio.addEventListener('pause', () => {
+                isPlaying = false;
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                }
+            });
+
+            // Stop visualizer when audio ends
+            audio.addEventListener('ended', () => {
+                isPlaying = false;
+                if (animationId) {
+                    cancelAnimationFrame(animationId);
+                }
+                // Clear canvas
+                ctx.fillStyle = '#000000';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+            });
+
+            // Initialize with black canvas
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Kamo Payment functions
+        const KAMO_ENDPOINT = 'https://tsateng-php-1003232992046.europe-west2.run.app/process_kamo_song.php';
+        const kamoForm = document.getElementById('kamoForm');
+        const kamoMessage = document.getElementById('kamoMessage');
+        const kamoSubmitBtn = document.getElementById('kamoSubmitBtn');
+
+        if (kamoForm) {
+            kamoForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                formData.append('song', 'kenyaka wena');
+                formData.append('price', '30');
+                formData.append('currency', 'ZAR');
+
+                kamoSubmitBtn.textContent = 'Processing...';
+                kamoSubmitBtn.disabled = true;
+                kamoMessage.innerHTML = '';
+
+                try {
+                    const response = await fetch(KAMO_ENDPOINT, {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        if (data.stage === 'bank_details') {
+                            // Show bank details
+                            kamoMessage.innerHTML = `
+                                <div style="background: rgba(123, 12, 12, 0.1); padding: 15px; border-radius: 8px; margin: 10px 0;">
+                                    <h4 style="color: #7b0c0c; margin-bottom: 10px;">Banking Details</h4>
+                                    <div style="background: white; padding: 10px; border-radius: 5px; margin-bottom: 10px;">
+                                        <p><strong>Bank:</strong> Capitec Business</p>
+                                        <p><strong>Account:</strong> Tsateng Productions Pty Ltd</p>
+                                        <p><strong>Account Number:</strong> 1051829933</p>
+                                        <p><strong>Branch Code:</strong> 450105</p>
+                                        <p><strong>Reference:</strong> KAMO-${formData.get('name').replace(/\s+/g, '').toUpperCase()}</p>
+                                        <p><strong>Amount:</strong> R30</p>
+                                    </div>
+                                    <p><strong>📋 Important:</strong> After payment, please upload proof of payment below.</p>
+                                    <input type="file" id="kamoProof" name="proofOfPayment" required style="margin-top: 10px; width: 100%; padding: 8px;">
+                                    <input type="hidden" name="name" value="${formData.get('name')}">
+                                    <input type="hidden" name="email" value="${formData.get('email')}">
+                                    <button type="button" onclick="submitKamoProof()" style="margin-top: 10px; background: #7b0c0c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Upload Proof & Get Song</button>
+                                </div>
+                            `;
+                        } else if (data.stage === 'download_link_sent') {
+                            // Download link sent
+                            kamoMessage.innerHTML = `<p style="color: green; font-weight: bold;">✅ Success! ${data.message}</p>`;
+                            kamoSubmitBtn.style.display = 'none';
+                        }
+                    } else {
+                        kamoMessage.innerHTML = `<p style="color: red;">❌ Error: ${data.message}</p>`;
+                        kamoSubmitBtn.textContent = 'Proceed to Payment';
+                        kamoSubmitBtn.disabled = false;
+                    }
+                } catch (error) {
+                    kamoMessage.innerHTML = `<p style="color: red;">❌ Network Error. Please try again.</p>`;
+                    kamoSubmitBtn.textContent = 'Proceed to Payment';
+                    kamoSubmitBtn.disabled = false;
+                }
+            });
+        }
+
+        function submitKamoProof() {
+            const proofInput = document.getElementById('kamoProof');
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            
+            if (!proofInput.files[0]) {
+                alert('Please select a proof of payment file');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('proofOfPayment', proofInput.files[0]);
+            formData.append('song', 'kenyaka wena');
+            formData.append('stage', 'proof_upload');
+
+            fetch(KAMO_ENDPOINT, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('kamoMessage').innerHTML = `<p style="color: green; font-weight: bold;">✅ ${data.message}</p>`;
+                } else {
+                    document.getElementById('kamoMessage').innerHTML = `<p style="color: red;">❌ ${data.message}</p>`;
+                }
+            })
+            .catch(error => {
+                document.getElementById('kamoMessage').innerHTML = `<p style="color: red;">❌ Network error. Please try again.</p>`;
+            });
+        }
+
+        function showKamoPaymentForm() {
+            document.getElementById('kamoPaymentForm').style.display = 'block';
+            document.querySelector('.purchase-buttons').style.display = 'none';
+        }
+
+        function purchasePhysical() {
+            alert('💿 Thank you for your interest in "Kenyaka wena"!\n\nPlease contact us to order the physical CD:\n📞 Phone: 064 653 4658\n📧 Email: info@tsatengproductions.org\n\nPrice: R150 (includes delivery)');
+        }
+
+        // Prevent right-click download
+        document.addEventListener('contextmenu', function(e) {
+            if (e.target.tagName === 'AUDIO') {
+                e.preventDefault();
+                alert('🎵 Please purchase the track to download. Contact us at music@tsatengproductions.org for purchasing options!');
+            }
+        });
+
+        // Auto-detect and set contact form department
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add department parameter to contact links
+            document.querySelectorAll('a[href*="contact_us.html"]').forEach(link => {
+                if (!link.href.includes('department=')) {
+                    link.href = link.href + (link.href.includes('?') ? '&' : '?') + 'department=music';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

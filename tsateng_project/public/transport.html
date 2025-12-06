@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Division - Tsateng Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .services-grid, .features-grid {
+                grid-template-columns: 1fr !important;
+            }
+            .banner-image {
+                height: 250px !important;
+            }
+            .banner-title {
+                font-size: 2rem !important;
+            }
+            .cta-buttons {
+                flex-direction: column !important;
+            }
+        }
+        
+        /* Touch improvements */
+        .service-highlight-card, .feature-card, .cta-btn {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .service-highlight-card:active, .feature-card:active, .cta-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient"></div>
+
+    <!-- Header with Navigation -->
+    <header class="contact-header">
+        <nav class="main-nav contact-nav">
+            <!-- Logo as homepage link -->
+            <a href="home.html" class="logo-link">
+                <img src="images/TSATENG LOGO 4.png" alt="Tsateng Productions Logo" class="contact-logo">
+            </a>
+            
+            <!-- Top bar with buttons -->
+            <div class="nav-top">
+                <div class="nav-buttons">
+                    <a href="home.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="transport-banner">
+        <div class="banner-image">
+            <img src="images/Taxi.jpg" alt="Tsateng Productions Transport Services" class="banner-img">
+            <div class="banner-overlay">
+                <h1 class="banner-title">Transport Division</h1>
+                <p class="banner-subtitle">Safe, Reliable & Efficient Transportation Solutions</p>
+                <div style="margin-top: 1rem; background: rgba(123, 12, 12, 0.8); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block;">
+                    <p style="margin: 0; font-size: 1rem;">📞 Call: 064 653 4658</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="transport-main">
+        <div class="transport-container">
+            
+            <!-- Introduction Section - Full Width -->
+            <div class="full-width-intro">
+                <div class="intro-card full-width">
+                    <h2>Reliable Transportation Solutions</h2>
+                    <p class="intro-text">Our Transport Division provides safe, efficient, and reliable transportation services tailored to meet the needs of our community and businesses. With a focus on safety and customer satisfaction, we ensure every journey is comfortable and secure.</p>
+                    
+                    <!-- Contact Info -->
+                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(123, 12, 12, 0.1); border-radius: 10px; text-align: center;">
+                        <p style="margin: 0; color: #7b0c0c; font-weight: bold;">
+                            📞 Transport Hotline: 064 653 4658 | 
+                            📧 Email: duvha@tsatengproductions.org
+                        </p>
+                    </div>
+                    
+                    <!-- Services in a grid -->
+                    <div class="services-grid">
+                        <div class="service-highlight-card" onclick="window.location.href='contact_us.html?department=transport&service=school'">
+                            <div class="service-icon">🚌</div>
+                            <h3>School Transport</h3>
+                            <p>Safe daily transportation for students with experienced drivers and well-maintained vehicles. Reliable morning pickup and afternoon drop-off.</p>
+                            <div style="margin-top: 1rem; font-size: 0.9rem; color: #7b0c0c; font-weight: bold;">
+                                🔒 Safety First | ⏰ Punctual Service
+                            </div>
+                        </div>
+                        
+                        <div class="service-highlight-card" onclick="window.location.href='contact_us.html?department=transport&service=tourism'">
+                            <div class="service-icon">🚗</div>
+                            <h3>Tourism Services</h3>
+                            <p>Comfortable transportation for tour groups, church outings, and special occasions throughout the region. Custom itineraries available.</p>
+                            <div style="margin-top: 1rem; font-size: 0.9rem; color: #7b0c0c; font-weight: bold;">
+                                🗺️ Custom Routes | 👥 Group Transport
+                            </div>
+                        </div>
+                        
+                        <div class="service-highlight-card" onclick="window.location.href='contact_us.html?department=transport&service=corporate'">
+                            <div class="service-icon">🏢</div>
+                            <h3>Corporate Shuttles</h3>
+                            <p>Professional shuttle services for businesses, corporate events, and employee transportation. Regular schedules or one-time events.</p>
+                            <div style="margin-top: 1rem; font-size: 0.9rem; color: #7b0c0c; font-weight: bold;">
+                                💼 Professional | 📅 Scheduled Services
+                            </div>
+                        </div>
+                        
+                        <div class="service-highlight-card" onclick="window.location.href='contact_us.html?department=transport&service=community'">
+                            <div class="service-icon">📍</div>
+                            <h3>Community Transport</h3>
+                            <p>Reliable transportation solutions serving local community needs, events, and special requirements. Affordable rates for all.</p>
+                            <div style="margin-top: 1rem; font-size: 0.9rem; color: #7b0c0c; font-weight: bold;">
+                                🤝 Community Focus | 💰 Affordable Rates
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section - Side by Side -->
+            <div class="features-section">
+                <h2 class="section-heading">Why Choose Our Transport Services?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>🛡️ Safety First</h3>
+                        <p>All our vehicles undergo regular safety inspections and our drivers are thoroughly vetted and trained in defensive driving techniques. We prioritize passenger safety above all.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>⏰ Punctuality</h3>
+                        <p>We understand the importance of being on time. Our reliable scheduling ensures you reach your destination when you need to, every time.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>💼 Professional Service</h3>
+                        <p>Our drivers are professional, courteous, and dedicated to providing excellent customer service throughout your journey. Clean vehicles and friendly service.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🔧 Well-Maintained Fleet</h3>
+                        <p>We maintain our vehicles to the highest standards, ensuring comfort, reliability, and safety for all our passengers. Regular maintenance and cleaning.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>📱 Easy Booking</h3>
+                        <p>Simple booking process via phone or email. We respond quickly to all inquiries and provide clear pricing with no hidden costs.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>🤝 Community Trusted</h3>
+                        <p>Built on trust and reliability within our community. We've been serving the Orkney and surrounding areas with dependable transport services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fleet Information -->
+            <div class="expansion-notice">
+                <div class="notice-card">
+                    <h3>🚐 Our Fleet</h3>
+                    <p>We maintain a modern fleet of vehicles to serve all your transportation needs:</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                        <div style="text-align: center; padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <div style="font-size: 2rem;">🚌</div>
+                            <h4 style="margin: 0.5rem 0;">School Buses</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">22-seater buses with safety belts</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <div style="font-size: 2rem;">🚗</div>
+                            <h4 style="margin: 0.5rem 0;">Sedans</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Comfortable 4-seater vehicles</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <div style="font-size: 2rem;">🚙</div>
+                            <h4 style="margin: 0.5rem 0;">SUVs</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">7-seater family vehicles</p>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <div style="font-size: 2rem;">🚐</div>
+                            <h4 style="margin: 0.5rem 0;">Mini-buses</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">15-seater group transport</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="contact-pricing">
+                <div class="contact-card">
+                    <h2>📍 Service Areas</h2>
+                    <p>We proudly serve the following areas and surrounding regions:</p>
+                    <div class="contact-info">
+                        <ul>
+                            <li><strong>Orkney</strong> - All areas including Kanana, Vaal Reefs</li>
+                            <li><strong>Klerksdorp</strong> - City center and suburbs</li>
+                            <li><strong>Potchefstroom</strong> - Regular routes available</li>
+                            <li><strong>Stilfontein</strong> - Local and school transport</li>
+                            <li><strong>Hartbeesfontein</strong> - Community services</li>
+                            <li><strong>Regional Tours</strong> - Custom destinations available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Section -->
+            <div class="cta-section full-width">
+                <div class="cta-card">
+                    <h2>Need Reliable Transportation?</h2>
+                    <p>Whether you need school transport for your children, tourism services for your group, or corporate transportation solutions, we're here to help. Get in touch with us to discuss your specific needs and get a quote.</p>
+                    <div class="cta-buttons">
+                        <a href="contact_us.html?department=transport" class="cta-btn primary">Get Transportation Quote</a>
+                        <a href="tel:0646534658" class="cta-btn secondary">Call Now: 064 653 4658</a>
+                        <a href="mailto:duvha@tsatengproductions.org?subject=Transport%20Inquiry" class="cta-btn" style="background: #28a745; color: white;">Email Inquiry</a>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(123, 12, 12, 0.1); border-radius: 8px;">
+                        <p style="margin: 0; color: #7b0c0c;">
+                            <strong>📞 Transport Hotline:</strong> 064 653 4658<br>
+                            <strong>📧 Email:</strong> duvha@tsatengproductions.org<br>
+                            <strong>📍 Base:</strong> 25 Mafohla Street, Kanana, Orkney, 2619
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <div class="division-links">
+                        <a href="music_division.html">Music Division</a>
+                        <a href="transport.html">Transport Division</a>
+                        <a href="supplies.html">Supply Division</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <div class="company-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact_us.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    Tsateng Productions Pty Ltd
+                </div>
+                <div class="registration">
+                    Registration Number: 2019/380354/07
+                </div>
+                <div class="contact-info" style="margin-top: 10px; font-size: 0.9rem; text-align: center;">
+                    <p>📞 064 653 4658 | 📧 duvha@tsatengproductions.org</p>
+                    <p>📍 25 Mafohla Street, Kanana, Orkney, 2619</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile optimizations
+        const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            // Add touch feedback
+            document.querySelectorAll('.service-highlight-card, .feature-card, .cta-btn').forEach(element => {
+                element.addEventListener('touchstart', function() {
+                    this.style.transform = 'scale(0.98)';
+                    this.style.opacity = '0.9';
+                });
+                
+                element.addEventListener('touchend', function() {
+                    this.style.transform = '';
+                    this.style.opacity = '';
+                });
+            });
+            
+            // Make service cards clickable
+            document.querySelectorAll('.service-highlight-card').forEach(card => {
+                card.style.cursor = 'pointer';
+            });
+            
+            // Make phone links more touch-friendly
+            document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+                link.style.minHeight = '44px';
+                link.style.display = 'flex';
+                link.style.alignItems = 'center';
+                link.style.justifyContent = 'center';
+            });
+        }
+        
+        // Auto-detect and set contact form department
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add department parameter to contact links
+            document.querySelectorAll('a[href*="contact_us.html"]').forEach(link => {
+                if (!link.href.includes('department=')) {
+                    link.href = link.href + (link.href.includes('?') ? '&' : '?') + 'department=transport';
+                }
+            });
+            
+            // Service card click handlers
+            document.querySelectorAll('.service-highlight-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const service = this.querySelector('h3').textContent.toLowerCase();
+                    let serviceType = 'general';
+                    
+                    if (service.includes('school')) serviceType = 'school';
+                    else if (service.includes('tourism')) serviceType = 'tourism';
+                    else if (service.includes('corporate')) serviceType = 'corporate';
+                    else if (service.includes('community')) serviceType = 'community';
+                    
+                    window.location.href = `contact_us.html?department=transport&service=${serviceType}`;
+                });
+            });
+            
+            // Add click tracking
+            document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Transport call initiated:', this.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

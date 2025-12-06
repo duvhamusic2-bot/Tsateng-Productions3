@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Division - Tsateng Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        
+        /* Touch improvements */
+        .process-card, .service-category, .cta-btn {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .process-card:active, .service-category:active, .cta-btn:active {
+            transform: scale(0.98);
+        }
+        
+        /* Slideshow touch improvements */
+        .slideshow-dots .dot {
+            min-width: 15px;
+            min-height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient"></div>
+
+    <!-- Header with Navigation -->
+    <header class="contact-header">
+        <nav class="main-nav contact-nav">
+            <!-- Logo as homepage link -->
+            <a href="home.html" class="logo-link">
+                <img src="images/TSATENG LOGO 4.png" alt="Tsateng Productions Logo" class="contact-logo">
+            </a>
+            
+            <!-- Top bar with buttons -->
+            <div class="nav-top">
+                <div class="nav-buttons">
+                    <a href="home.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Animated Slideshow Banner -->
+    <section class="supply-banner">
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="images/banner/beown dress.jpg" alt="Clothing Collection 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="images/banner/black dress.jpg" alt="Clothing Collection 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide fade">
+                <img src="images/banner/blue jeans.jpg" alt="Clothing Collection 3">
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide fade">
+                <img src="images/banner/Cream dress.jpg" alt="Clothing Collection 4">
+            </div>
+            <!-- Slide 5 -->
+            <div class="slide fade">
+                <img src="images/banner/girl in jeans.jpg" alt="Clothing Collection 5">
+            </div>
+            <!-- Slide 6 -->
+            <div class="slide fade">
+                <img src="images/banner/girl jean jumpsuit.jpg" alt="Clothing Collection 6">
+            </div>
+            <!-- Slide 7 -->
+            <div class="slide fade">
+                <img src="images/banner/grey jumpsuit.jpg" alt="Clothing Collection 7">
+            </div>
+            <!-- Slide 8 -->
+            <div class="slide fade">
+                <img src="images/banner/guy grey.jpg" alt="Clothing Collection 8">
+            </div>
+            <!-- Slide 9 -->
+            <div class="slide fade">
+                <img src="images/banner/seshweshwe.jpg" alt="Clothing Collection 9">
+            </div>
+            <!-- Slide 10 -->
+            <div class="slide fade">
+                <img src="images/banner/shoes.jpg" alt="Clothing Collection 10">
+            </div>
+            <!-- Slide 11 -->
+            <div class="slide fade">
+                <img src="images/banner/suits.jpg" alt="Clothing Collection 11">
+            </div>
+
+            <!-- Banner Overlay Text -->
+            <div class="banner-overlay">
+                <h1 class="banner-title">Supply Division</h1>
+                <p class="banner-subtitle">Premium Clothing Sourcing & Delivery Service</p>
+                <div style="margin-top: 1rem; background: rgba(123, 12, 12, 0.8); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block;">
+                    <p style="margin: 0; font-size: 1rem;">📱 Send us pictures of what you want!</p>
+                </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="slideshow-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="supply-main">
+        <div class="supply-container">
+            
+            <!-- How It Works Section -->
+            <div class="full-width-intro">
+                <div class="intro-card full-width">
+                    <h2>Your Personal Clothing Sourcing Service</h2>
+                    <p class="intro-text">We make fashion accessible! Tell us what clothing items you're looking for, and we'll source them for you. Our personal shopping service handles everything from finding the perfect items to delivering them to your doorstep.</p>
+                    
+                    <!-- Contact Info -->
+                    <div style="margin: 1.5rem 0; padding: 1.5rem; background: rgba(123, 12, 12, 0.1); border-radius: 10px; text-align: center;">
+                        <p style="margin: 0; color: #7b0c0c; font-weight: bold;">
+                            📞 Supply Line: 064 653 4658 | 
+                            📧 Email: info@tsatengproductions.org<br>
+                            📱 WhatsApp: Send pictures of what you want!
+                        </p>
+                    </div>
+                    
+                    <!-- Process Steps -->
+                    <div class="process-steps">
+                        <div class="process-card">
+                            <div class="step-number">1</div>
+                            <h3>Tell Us What You Need</h3>
+                            <p>Contact us with details about the clothing items you want - style, size, color, brand preferences, or send us pictures for reference via WhatsApp or email.</p>
+                        </div>
+                        
+                        <div class="process-card">
+                            <div class="step-number">2</div>
+                            <h3>We Source For You</h3>
+                            <p>Our team searches through suppliers and markets to find exactly what you're looking for at the best possible prices. We compare options for quality and value.</p>
+                        </div>
+                        
+                        <div class="process-card">
+                            <div class="step-number">3</div>
+                            <h3>Get Quote & Confirm</h3>
+                            <p>We provide you with pricing and photos of available options. No obligation until you approve! You can request changes or alternatives.</p>
+                        </div>
+                        
+                        <div class="process-card">
+                            <div class="step-number">4</div>
+                            <h3>We Deliver</h3>
+                            <p>Once confirmed, we purchase the items and deliver them directly to you. Simple, convenient, and hassle-free! Delivery available to your location.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-section">
+                <h2 class="section-heading">What We Can Source For You</h2>
+                <div class="services-grid">
+                    <div class="service-category">
+                        <h3>👕 Casual Wear</h3>
+                        <ul>
+                            <li>T-shirts & Tops</li>
+                            <li>Jeans & Casual Pants</li>
+                            <li>Hoodies & Sweaters</li>
+                            <li>Shorts & Skirts</li>
+                            <li>Jackets & Coats</li>
+                            <li>Activewear</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3>👔 Formal Wear</h3>
+                        <ul>
+                            <li>Dress Shirts</li>
+                            <li>Suits & Blazers</li>
+                            <li>Dress Pants</li>
+                            <li>Formal Dresses</li>
+                            <li>Evening Gowns</li>
+                            <li>Traditional Wear</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3>🧥 Seasonal Wear</h3>
+                        <ul>
+                            <li>Winter Jackets</li>
+                            <li>Rain Coats</li>
+                            <li>Summer Dresses</li>
+                            <li>Seasonal Accessories</li>
+                            <li>Swimwear</li>
+                            <li>Thermal Wear</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-category">
+                        <h3>👟 Shoes & Accessories</h3>
+                        <ul>
+                            <li>Casual & Sports Shoes</li>
+                            <li>Formal Footwear</li>
+                            <li>Bags & Backpacks</li>
+                            <li>Belts & Jewelry</li>
+                            <li>Watches</li>
+                            <li>Sunglasses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sourcing Examples -->
+            <div class="expansion-notice">
+                <div class="notice-card">
+                    <h3>🎯 Popular Sourcing Requests</h3>
+                    <p>Here are some items we commonly source for our clients:</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                        <div style="padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <h4 style="margin: 0 0 0.5rem 0; color: #7b0c0c;">👔 Corporate Wear</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Office attire, business suits, formal shirts, professional dresses</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <h4 style="margin: 0 0 0.5rem 0; color: #7b0c0c;">🎓 School Uniforms</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Complete school uniforms, blazers, shirts, skirts, trousers</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <h4 style="margin: 0 0 0.5rem 0; color: #7b0c0c;">💒 Special Occasions</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Wedding attire, graduation outfits, birthday party clothing</p>
+                        </div>
+                        <div style="padding: 1rem; background: rgba(123, 12, 12, 0.05); border-radius: 8px;">
+                            <h4 style="margin: 0 0 0.5rem 0; color: #7b0c0c;">👨‍👩‍👧‍👦 Family Orders</h4>
+                            <p style="margin: 0; font-size: 0.9rem;">Complete family outfits, matching styles, bulk purchases</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact for Pricing -->
+            <div class="contact-pricing">
+                <div class="contact-card">
+                    <h2>📞 Contact Us for Pricing</h2>
+                    <p>We offer competitive pricing with transparent service fees. Contact us with your specific clothing needs, and we'll provide you with a detailed quote including all costs.</p>
+                    <div class="contact-info">
+                        <p><strong>💬 How to get a quote:</strong></p>
+                        <ul>
+                            <li><strong>Call or WhatsApp</strong> us with item descriptions</li>
+                            <li><strong>Send photos or links</strong> of what you're looking for</li>
+                            <li><strong>We'll respond</strong> with available options and pricing</li>
+                            <li><strong>No obligation</strong> until you confirm your order</li>
+                            <li><strong>Delivery options</strong> available to your location</li>
+                            <li><strong>Bulk discounts</strong> for large orders</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Quick Contact Options -->
+                    <div style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                        <a href="tel:0646534658" style="background: #7b0c0c; color: white; padding: 1rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            📞 Call Now: 064 653 4658
+                        </a>
+                        <a href="https://wa.me/27646534658?text=Hi%20Tsateng%20Productions,%20I%20need%20help%20sourcing%20clothing%20items" 
+                           style="background: #25D366; color: white; padding: 1rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            💬 WhatsApp Us
+                        </a>
+                        <a href="mailto:info@tsatengproductions.org?subject=Clothing%20Sourcing%20Request" 
+                           style="background: #007bff; color: white; padding: 1rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                            📧 Email Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Section -->
+            <div class="cta-section full-width">
+                <div class="cta-card">
+                    <h2>Ready to Find Your Perfect Outfit?</h2>
+                    <p>Stop searching and let us do the work for you! Contact us with your clothing needs, and we'll handle the rest. From everyday wear to special occasion outfits, we've got you covered with our personal sourcing service.</p>
+                    <div class="cta-buttons">
+                        <a href="contact_us.html?department=supply" class="cta-btn primary">Request Clothing Items</a>
+                        <a href="tel:0646534658" class="cta-btn secondary">Call for Quote: 064 653 4658</a>
+                    </div>
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(123, 12, 12, 0.1); border-radius: 8px;">
+                        <p style="margin: 0; color: #7b0c0c;">
+                            <strong>📞 Supply Division:</strong> 064 653 4658<br>
+                            <strong>📧 Email:</strong> info@tsatengproductions.org<br>
+                            <strong>📍 Base:</strong> 25 Mafohla Street, Kanana, Orkney, 2619<br>
+                            <strong>🕒 Response Time:</strong> Usually within 2-4 hours
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <div class="division-links">
+                        <a href="music_division.html">Music Division</a>
+                        <a href="transport.html">Transport Division</a>
+                        <a href="supplies.html">Supply Division</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <div class="company-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact_us.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    Tsateng Productions Pty Ltd
+                </div>
+                <div class="registration">
+                    Registration Number: 2019/380354/07
+                </div>
+                <div class="contact-info" style="margin-top: 10px; font-size: 0.9rem; text-align: center;">
+                    <p>📞 064 653 4658 | 📧 info@tsatengproductions.org</p>
+                    <p>📍 25 Mafohla Street, Kanana, Orkney, 2619</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Slideshow functionality - FIXED VERSION
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            
+            // Remove active class from all dots
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            
+            // Show current slide and activate dot
+            if (slides[slideIndex-1]) {
+                slides[slideIndex-1].classList.add("active");
+            }
+            if (dots[slideIndex-1]) {
+                dots[slideIndex-1].classList.add("active");
+            }
+            
+            // Change image every 4 seconds
+            setTimeout(showSlides, 4000);
+        }
+
+        // Manual navigation
+        function currentSlide(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            // Hide all slides and remove active classes
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+                dots[i].classList.remove("active");
+            }
+            
+            // Show selected slide
+            if (slides[n-1]) {
+                slides[n-1].classList.add("active");
+                dots[n-1].classList.add("active");
+            }
+            
+            slideIndex = n;
+        }
+        
+
+        
+        // Auto-detect and set contact form department
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add department parameter to contact links
+            document.querySelectorAll('a[href*="contact_us.html"]').forEach(link => {
+                if (!link.href.includes('department=')) {
+                    link.href = link.href + (link.href.includes('?') ? '&' : '?') + 'department=supply';
+                }
+            });
+            
+            // Add WhatsApp tracking
+            document.querySelectorAll('a[href^="https://wa.me/"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('WhatsApp initiated for supply division');
+                });
+            });
+            
+            // Service category interaction
+            document.querySelectorAll('.service-category').forEach(category => {
+                category.addEventListener('click', function() {
+                    const categoryName = this.querySelector('h3').textContent;
+                    console.log('Selected category:', categoryName);
+                    // Could expand to show more items from this category
+                });
+            });
+        });
+    </script>
+</body>
+</html>

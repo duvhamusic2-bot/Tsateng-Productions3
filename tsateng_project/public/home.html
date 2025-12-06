@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsateng Productions</title>
+    <link rel="stylesheet" href="style.css">
+	    <style>
+	        /* Touch improvements */
+	        .section-card, .nav-btn {
+	            cursor: pointer;
+	            transition: transform 0.2s ease, opacity 0.2s ease;
+	        }
+	        
+	        .section-card:active, .nav-btn:active {
+	            transform: scale(0.98);
+	            opacity: 0.9;
+	        }
+	    </style>
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient"></div>
+
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="main-nav">
+            <!-- Top bar with buttons -->
+            <div class="nav-top">
+                <div class="nav-buttons">
+                    <a href="home.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Logo section -->
+            <div class="logo-section">
+                <img src="images/TSATENG LOGO 4.png" alt="Tsateng Productions Logo" class="logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Company Introduction Section -->
+        <section class="company-intro">
+            <div class="intro-content">
+                <h2>Welcome to Tsateng Productions</h2>
+                <p>Tsateng Productions is a multifaceted enterprise offering three core divisions of professional services. Our music division specializes in comprehensive artist development through talent scouting, professional recording services, and music publishing. Additionally, we operate a reliable transport business and maintain a robust supply division, providing diverse business solutions across multiple industries.</p>
+                <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(123, 12, 12, 0.1); border-radius: 8px;">
+                    <p style="margin: 0; color: #7b0c0c; font-weight: bold;">
+                        📞 Contact: 064 653 4658 | 
+                        📧 Email: info@tsatengproductions.org | 
+                        📍 25 Mafohla Street, Kanana, Orkney, 2619
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <div class="sections-grid">
+            <!-- Music Section -->
+            <a href="music_division.html" class="section-card" onclick="trackClick('music_division')">
+                <div class="section-image">
+                    <img src="images/Music div.jpg" alt="Music Services" class="section-img">
+                    <div style="position: absolute; top: 10px; right: 10px; background: rgba(123, 12, 12, 0.9); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">
+                        🎵 Featured: For Christ Worship
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title">Music Division</h2>
+                    <div class="subsection">🎤 Talent Scouting & Development</div>
+                    <div class="subsection">🎧 Professional Recording Studio</div>
+                    <div class="subsection">📀 Music Publishing & Distribution</div>
+                    <div class="subsection">🙏 For Christ Worship Gospel Group</div>
+                    <div style="margin-top: 1rem; color: #7b0c0c; font-weight: bold; font-size: 0.9rem;">
+                        Contact: info@tsatengproductions.org
+                    </div>
+                </div>
+            </a>
+
+            <!-- Transport Section -->
+            <a href="transport.html" class="section-card" onclick="trackClick('transport')">
+                <div class="section-image">
+                    <img src="images/Taxi.jpg" alt="Transport Services" class="section-img">
+                    <div style="position: absolute; top: 10px; right: 10px; background: rgba(123, 12, 12, 0.9); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">
+                        🚗 Safe & Reliable
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title">Transport Division</h2>
+                    <div class="subsection">🚌 School Transport Services</div>
+                    <div class="subsection">🏞️ Tourism & Group Transport</div>
+                    <div class="subsection">🏢 Corporate Shuttle Services</div>
+                    <div class="subsection">📍 Community Transport Solutions</div>
+                    <div style="margin-top: 1rem; color: #7b0c0c; font-weight: bold; font-size: 0.9rem;">
+                        Contact: duvha@tsatengproductions.org
+                    </div>
+                </div>
+            </a>
+
+            <!-- Supply Section -->
+            <a href="supplies.html" class="section-card" onclick="trackClick('supplies')">
+                <div class="section-image">
+                    <img src="images/banner/seshweshwe.jpg" alt="Supply Services" class="section-img">
+                    <div style="position: absolute; top: 10px; right: 10px; background: rgba(123, 12, 12, 0.9); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">
+                        👕 Quality Clothing
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h2 class="section-title">Supply Division</h2>
+                    <div class="subsection">🛍️ Clothing Sourcing Service</div>
+                    <div class="subsection">👔 Personal Shopping Assistant</div>
+                    <div class="subsection">🚚 Reliable Product Delivery</div>
+                    <div class="subsection">🎯 Custom Requests & Orders</div>
+                    <div style="margin-top: 1rem; color: #7b0c0c; font-weight: bold; font-size: 0.9rem;">
+                        Contact: info@tsatengproductions.org
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Quick Contact Section -->
+        <div style="max-width: 800px; margin: 2rem auto; padding: 1.5rem; background: rgba(0, 0, 0, 0.8); border-radius: 10px; border: 2px solid #7b0c0c; text-align: center;">
+            <h3 style="color: white; margin-bottom: 1rem;">Need Immediate Assistance?</h3>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                <a href="tel:0646534658" style="background: #7b0c0c; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    📞 Call: 064 653 4658
+                </a>
+                <a href="contact_us.html" style="background: white; color: #7b0c0c; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; border: 2px solid #7b0c0c;">
+                    📧 Send Message
+                </a>
+                <a href="for_christ_worship.html" style="background: #28a745; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+                    🎵 For Christ Worship Tickets
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <div class="division-links">
+                        <a href="music_division.html">Music Division</a>
+                        <a href="transport.html">Transport Division</a>
+                        <a href="supplies.html">Supply Division</a>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="for_christ_worship.html" style="color: #cccccc; text-decoration: none; font-weight: bold;">
+                            🎵 For Christ Worship
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <div class="company-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact_us.html">Contact</a>
+                    </div>
+                    <div style="margin-top: 1rem;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    Tsateng Productions Pty Ltd
+                </div>
+                <div class="registration">
+                    Registration Number: 2019/380354/07
+                </div>
+                <div class="contact-info" style="margin-top: 10px; font-size: 0.9rem; text-align: center;">
+                    <p>📞 064 653 4658 | 📧 info@tsatengproductions.org</p>
+                    <p>📍 25 Mafohla Street, Kanana, Orkney, 2619</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	    <script>
+	        // Tracking function
+	        function trackClick(section) {
+	            console.log(`Clicked on: ${section}`);
+	            // You can add Google Analytics or other tracking here
+	        }
+	        
+	        // Logo animation on load
+	        document.addEventListener('DOMContentLoaded', function() {
+	            const logo = document.querySelector('.logo');
+	            if (logo) {
+	                setTimeout(() => {
+	                    logo.style.transition = 'transform 0.5s ease';
+	                    logo.style.transform = 'scale(1.02)';
+	                    setTimeout(() => {
+	                        logo.style.transform = '';
+	                    }, 300);
+	                }, 1000);
+	            }
+	        });
+	    </script>
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Christ Worship - Tsateng Productions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile-specific improvements */
+        @media (max-width: 768px) {
+            .video-wrapper video {
+                height: auto !important;
+            }
+            .ticket-form input, .ticket-form select, .ticket-form textarea {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+            .form-actions {
+                flex-direction: column;
+            }
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+        
+        /* Video loading improvements (Removed as video player was removed) */
+    </style>
+</head>
+<body>
+    <!-- Animated Gradient Background -->
+    <div class="animated-gradient"></div>
+
+    <!-- Header with Navigation -->
+    <header class="contact-header">
+        <nav class="main-nav contact-nav">
+            <a href="home.html" class="logo-link">
+                <img src="images/TSATENG LOGO 4.png" alt="Tsateng Productions Logo" class="contact-logo">
+            </a>
+            <div class="nav-top">
+                <div class="nav-buttons">
+                    <a href="home.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="artist-main">
+        <div class="artist-container">
+            <!-- Artist Header Section -->
+            <section class="artist-header">
+                <div class="artist-hero">
+                    <h1 class="artist-title">For Christ Worship</h1>
+                    <p class="artist-tagline">"Songs of Redemption" Album Launch</p>
+                    <p class="artist-subtitle" style="color: #ffffff; margin-top: 1rem; font-size: 1.1rem;">
+                        Live Recording: October 4, 2025 at Rio Casino, Klerksdorp<br>
+                        Album Launch: March 28, 2026 at Oukerk Klerksdorp
+                    </p>
+                </div>
+            </section>
+
+            <!-- Album & Single Section -->
+            <section class="album-section">
+                <div class="album-container">
+                    <h2>Featured Single: "Thapelo ya pelo"</h2>
+                    <div class="album-content">
+                        <div class="album-art">
+                            <img src="images/Sleeve.jpg" alt="Songs of Redemption Album Cover" class="album-sleeve">
+                            <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                                Album: <strong>Songs of Redemption</strong><br>
+                                Recorded Live: October 4, 2025<br>
+                                Launching: March 28, 2026
+                            </p>
+                        </div>
+                        <div class="album-details">
+                            <h3>"Songs of Redemption" - Live Album</h3>
+                            <p class="album-description">Experience the powerful worship music recorded live at Rio Casino, Klerksdorp. This album captures the spiritual essence of For Christ Worship's ministry, featuring heartfelt worship and praise songs that have touched many souls.</p>
+                            
+                            <!-- Audio Player -->
+                            <div class="single-audio-player">
+                                <h4>Listen to the Single</h4>
+                                <audio controls class="single-audio" preload="metadata" id="mainAudio">
+                                    <source src="" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+
+                            <!-- Music Video -->
+                            <div class="music-video">
+                                <h4>Watch the Music Video</h4>
+                                <div class="video-wrapper">
+                                    <!-- Video player removed as requested by user -->
+                                </div>
+                                <div class="video-loading" id="videoLoading">
+                                    <p>Loading video... Please wait</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Event Details Section -->
+            <section class="event-section">
+                <div class="event-details">
+                    <h2>Album Launch Event</h2>
+                    <div class="event-grid">
+                        <div class="event-poster">
+                            <img src="images/Event poster.jpg" alt="Songs of Redemption Album Launch" class="poster-img">
+                            <p style="text-align: center; margin-top: 1rem; color: #666;">
+                                Celebrate with us at the official album launch!
+                            </p>
+                        </div>
+                        <div class="event-info">
+                            <div class="event-schedule">
+                                <h3>📅 Event Schedule</h3>
+                                <div class="schedule-item">
+                                    <strong>Photoshoot Session:</strong>
+                                    <span>17:00 - 18:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <strong>Worship Show:</strong>
+                                    <span>18:00 - 21:00</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <strong>Date:</strong>
+                                    <span>March 28, 2026</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <strong>Album:</strong>
+                                    <span>Songs of Redemption</span>
+                                </div>
+                            </div>
+                            
+                            <div class="event-venue">
+                                <h3>📍 Venue Details</h3>
+                                <p><strong>Oukerk, Klerksdorp</strong></p>
+                                <p style="font-size: 0.9rem; color: #666;">
+                                    Behind Klerksdorp Magistrate Court<br>
+                                    Ample parking available
+                                </p>
+                            </div>
+                            
+                            <div class="ticket-pricing">
+                                <h3>🎫 Ticket Information</h3>
+                                <div class="price-display">
+                                    <span class="ticket-amount">R200</span>
+                                    <span class="price-note">per person</span>
+                                </div>
+                                <p class="inclusions">Includes: Full worship experience + Professional photoshoot opportunity</p>
+                            </div>
+
+                            <div class="event-description">
+                                <h3>🌟 About the Launch</h3>
+                                <p>Join For Christ Worship for the official launch of "Songs of Redemption" - an unforgettable night celebrating the live recording from Rio Casino. This special event includes:</p>
+                                <ul class="event-features">
+                                    <li>Live performance of the "Songs of Redemption" album</li>
+                                    <li>Professional photoshoot with the worship team (17:00-18:00)</li>
+                                    <li>Powerful worship experience (18:00-21:00)</li>
+                                    <li>Meet & greet with For Christ Worship members</li>
+                                    <li>Refreshments and fellowship</li>
+                                    <li>First access to the physical album</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Enhanced Ticket Purchasing Section -->
+            <section class="ticket-section">
+                <div class="ticket-container">
+                    <h2>Get Your Tickets Now</h2>
+                    <div class="ticket-options">
+                        <div class="ticket-card">
+                            <h3>Album Launch Experience</h3>
+                            <div class="ticket-price">R200</div>
+                            <ul class="ticket-features">
+                                <li>✅ Full Worship Show Access</li>
+                                <li>✅ Professional Photoshoot</li>
+                                <li>✅ "Songs of Redemption" Album Launch</li>
+                                <li>✅ Meet & Greet Opportunity</li>
+                            </ul>
+                            <button class="buy-btn" onclick="showBankTransferForm()">Purchase Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bank Transfer Form -->
+            <section id="bankTransferFormSection" class="ticket-form-section">
+                <div class="form-container">
+                    <h2>Bank Transfer Payment</h2>
+                    <div class="bank-details">
+                        <h3>Banking Details</h3>
+                        <div class="bank-info">
+                            <div class="bank-item">
+                                <strong>Bank Name:</strong>
+                                <span id="bankName">Capitec Business</span>
+                            </div>
+                            <div class="bank-item">
+                                <strong>Account Holder:</strong>
+                                <span id="accountHolder">Tsateng Productions Pty Ltd</span>
+                            </div>
+                            <div class="bank-item">
+                                <strong>Account Number:</strong>
+                                <span id="accountNumber">1051829933</span>
+                            </div>
+                            <div class="bank-item">
+                                <strong>Branch Code:</strong>
+                                <span id="branchCode">450105</span>
+                            </div>
+                            <div class="bank-item">
+                                <strong>Reference:</strong>
+                                <span id="paymentReference">FCW[YourName]</span>
+                            </div>
+                            <div class="bank-item important">
+                                <strong>Amount:</strong>
+                                <span id="transferAmount">R200 per ticket</span>
+                            </div>
+                        </div>
+                        <div class="transfer-notice">
+                            <p>📋 <strong>Important:</strong> Use your name as reference when making payment</p>
+                        </div>
+                    </div>
+
+                    <form id="bankTransferForm" class="ticket-form" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="bankFullName">Full Name *</label>
+                            <input type="text" id="bankFullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bankEmail">Email Address *</label>
+                            <input type="email" id="bankEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bankPhone">Phone Number *</label>
+                            <input type="tel" id="bankPhone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bankQuantity">Number of Tickets *</label>
+                            <select id="bankQuantity" name="quantity" required onchange="updateBankReference()">
+                                <option value="1">1 Ticket - R200</option>
+                                <option value="2">2 Tickets - R400</option>
+                                <option value="3">3 Tickets - R600</option>
+                                <option value="4">4 Tickets - R800</option>
+                                <option value="5">5 Tickets - R1000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="proofOfPayment">Proof of Payment *</label>
+                            <input type="file" id="proofOfPayment" name="proofOfPayment" accept=".pdf,.jpg,.jpeg,.png" required>
+                            <small>Upload PDF or image of your bank transfer confirmation</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bankReferralCode">Referral Code (Optional)</label>
+                            <input type="text" id="bankReferralCode" name="referralCode" placeholder="Enter FCW group member code">
+                            <small>If you were referred by a group member, enter their code (FCW001-FCW011)</small>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Submit Proof of Payment</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Success Message -->
+            <section id="successMessage" class="success-message hidden">
+                <div class="success-card">
+                    <h2>🎉 Tickets Purchased Successfully!</h2>
+                    <p>Your tickets for the "Songs of Redemption" Album Launch have been reserved!</p>
+                    <p><strong>📧 Check your email (including spam folder) for your tickets with QR codes.</strong></p>
+                    <p><strong>📸 Don't forget: Photoshoot starts at 17:00, Worship begins at 18:00</strong></p>
+                    <p><strong>🎵 Event: Songs of Redemption Album Launch</strong></p>
+                    <button onclick="hideSuccessMessage()" class="continue-btn">Continue</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+<!-- Group Member Cash Entry Section -->
+<section class="member-section" id="memberSection">
+    <div class="member-container">
+        <h2>🎫 Group Member Cash Sales</h2>
+        
+        <!-- Member Login Form -->
+        <div class="member-login" id="memberLogin">
+            <div class="login-card">
+                <h3>Member Login</h3>
+                <form id="memberLoginForm">
+                    <div class="form-group">
+                        <label for="memberCode">Reference Code</label>
+                        <input type="text" id="memberCode" name="memberCode" placeholder="FCW001 - FCW011" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="memberPassword">Password</label>
+                        <input type="password" id="memberPassword" name="memberPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <p class="login-note">Only for FCW group members with cash sales</p>
+            </div>
+        </div>
+
+        <!-- Cash Ticket Entry Form -->
+        <div class="cash-entry hidden" id="cashEntry">
+            <div class="cash-card">
+                <div class="member-header">
+                    <h3>💵 Enter Cash Ticket Sale</h3>
+                    <p>Logged in as: <span id="loggedInMember">FCW001</span></p>
+                    <button onclick="logoutMember()" class="btn-secondary">Logout</button>
+                </div>
+                
+                <form id="cashTicketForm">
+                    <div class="form-group">
+                        <label for="cashQuantity">Number of Tickets *</label>
+                        <select id="cashQuantity" name="quantity" required>
+                            <option value="1">1 Ticket - R200</option>
+                            <option value="2">2 Tickets - R400</option>
+                            <option value="3">3 Tickets - R600</option>
+                            <option value="4">4 Tickets - R800</option>
+                            <option value="5">5 Tickets - R1000</option>
+                            <option value="6">6 Tickets - R1200</option>
+                            <option value="7">7 Tickets - R1400</option>
+                            <option value="8">8 Tickets - R1600</option>
+                            <option value="9">9 Tickets - R1800</option>
+                            <option value="10">10 Tickets - R2000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="buyerName">Buyer's Full Name *</label>
+                        <input type="text" id="buyerName" name="buyerName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="buyerEmail">Buyer's Email *</label>
+                        <input type="email" id="buyerEmail" name="buyerEmail" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="buyerPhone">Buyer's Phone</label>
+                        <input type="tel" id="buyerPhone" name="buyerPhone">
+                    </div>
+                    
+                    <div class="cash-actions">
+                        <button type="submit" class="btn-primary">Generate Tickets</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Member Access Button in Ticket Section -->
+<div class="member-access" style="text-align: center; margin: 2rem 0;">
+    <button onclick="showMemberSection()" class="member-btn" style="color: white; background: #7b0c0c; border: none; padding: 1rem 2rem; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer;">
+        🎫 Group Member Cash Sales
+    </button>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Our Divisions</h3>
+                    <div class="division-links">
+                        <a href="music_division.html">Music Division</a>
+                        <a href="transport.html">Transport Division</a>
+                        <a href="supplies.html">Supply Division</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <div class="company-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact_us.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    Tsateng Productions Pty Ltd
+                </div>
+                <div class="registration">
+                    Registration Number: 2019/380354/07
+                </div>
+                <div class="contact-info" style="margin-top: 10px; font-size: 0.9rem; text-align: center;">
+                    <p>📞 064 653 4658 | 📧 fcw@tsatengproductions.org</p>
+                    <p>📍 25 Mafohla Street, Kanana, Orkney, 2619</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Video player JavaScript removed as requested by user            loading.classList.remove('active');
+            });
+            
+            // Preload only metadata for mobile efficiency
+            if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+                video.preload = 'metadata';
+            }
+        }
+        
+        // Direct bank transfer form display
+        function showBankTransferForm() {
+            document.getElementById('bankTransferFormSection').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Update bank reference based on name and quantity
+        function updateBankReference() {
+            const name = document.getElementById('bankFullName').value || 'YourName';
+            const quantity = document.getElementById('bankQuantity').value;
+            const amount = quantity * 200;
+            
+            document.getElementById('paymentReference').textContent = `FCW${name.replace(/\s+/g, '')}`;
+            document.getElementById('transferAmount').textContent = `R${amount} (${quantity} ticket${quantity > 1 ? 's' : ''})`;
+        }
+        
+        document.getElementById('bankFullName').addEventListener('input', updateBankReference);
+        document.getElementById('bankQuantity').addEventListener('change', updateBankReference);
+        
+        // Bank Transfer Form Submission
+        document.getElementById('bankTransferForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            // Validate file upload
+            const fileInput = document.getElementById('proofOfPayment');
+            if (fileInput.files.length === 0) {
+                alert('Please upload proof of payment');
+                return;
+            }
+            
+            processTicketPurchase(formData);
+        });
+        
+        // Unified ticket processing
+        function processTicketPurchase(formData) {
+            const submitBtn = document.querySelector('#bankTransferFormSection .btn-primary');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Processing...';
+            submitBtn.disabled = true;
+        
+            const endpoint = 'process_bank_transfer.php';
+        
+            fetch(endpoint, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('successMessage').classList.remove('hidden');
+                    document.getElementById('bankTransferForm').reset();
+                    updateBankReference();
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                alert('Sorry, there was an error processing your request. Please try again.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        // Referral codes for the 11 group members
+        const referralCodes = [
+            'FCW001', 'FCW002', 'FCW003', 'FCW004', 'FCW005',
+            'FCW006', 'FCW007', 'FCW008', 'FCW009', 'FCW010', 'FCW011'
+        ];
+        
+        // Add referral code validation
+        document.getElementById('bankReferralCode').addEventListener('input', validateReferralCode);
+        
+        function validateReferralCode(e) {
+            const code = e.target.value.toUpperCase();
+            if (code && !referralCodes.includes(code)) {
+                e.target.style.borderColor = '#ff6b6b';
+                e.target.title = 'Invalid referral code';
+            } else {
+                e.target.style.borderColor = '#7b0c0c';
+                e.target.title = '';
+            }
+        }
+        
+        // Group Member System
+        const memberPasswords = {
+            'FCW001': 'member001',
+            'FCW002': 'member002', 
+            'FCW003': 'member003',
+            'FCW004': 'member004',
+            'FCW005': 'member005',
+            'FCW006': 'member006',
+            'FCW007': 'member007',
+            'FCW008': 'member008',
+            'FCW009': 'member009',
+            'FCW010': 'member010',
+            'FCW011': 'member011'
+        };
+        
+        function showMemberSection() {
+            document.getElementById('memberSection').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function logoutMember() {
+            document.getElementById('memberLogin').classList.remove('hidden');
+            document.getElementById('cashEntry').classList.add('hidden');
+            document.getElementById('memberLoginForm').reset();
+        }
+        
+        // Member Login
+        document.getElementById('memberLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const memberCode = document.getElementById('memberCode').value.toUpperCase();
+            const password = document.getElementById('memberPassword').value;
+            
+            if (memberPasswords[memberCode] && memberPasswords[memberCode] === password) {
+                // Successful login
+                document.getElementById('loggedInMember').textContent = memberCode;
+                document.getElementById('memberLogin').classList.add('hidden');
+                document.getElementById('cashEntry').classList.remove('hidden');
+            } else {
+                alert('Invalid member code or password. Please try again.');
+            }
+        });
+        
+        // Cash Ticket Submission
+        document.getElementById('cashTicketForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const memberCode = document.getElementById('loggedInMember').textContent;
+            const quantity = document.getElementById('cashQuantity').value;
+            const buyerName = document.getElementById('buyerName').value;
+            const buyerEmail = document.getElementById('buyerEmail').value;
+            const buyerPhone = document.getElementById('buyerPhone').value;
+            
+            const submitBtn = this.querySelector('.btn-primary');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Generating Tickets...';
+            submitBtn.disabled = true;
+        
+            const formData = new FormData();
+            formData.append('memberCode', memberCode);
+            formData.append('quantity', quantity);
+            formData.append('buyerName', buyerName);
+            formData.append('buyerEmail', buyerEmail);
+            formData.append('buyerPhone', buyerPhone);
+            formData.append('paymentMethod', 'cash');
+        
+            fetch('process_cash_tickets.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('✅ Cash tickets generated successfully! Tickets have been emailed to the buyer.');
+                    document.getElementById('cashTicketForm').reset();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            })
+            .catch(error => {
+                alert('Sorry, there was an error processing the cash tickets. Please try again.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+        
+        // Success message functions
+        function hideSuccessMessage() {
+            document.getElementById('successMessage').classList.add('hidden');
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateBankReference(); // Initialize bank reference
+            
+            // Mobile optimizations
+            if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+                // Add touch-friendly classes
+                document.querySelectorAll('button, .nav-btn, .buy-btn, .btn-primary, .btn-secondary').forEach(btn => {
+                    btn.classList.add('touch-friendly');
+                });
+                
+                // Adjust font sizes for mobile
+                document.querySelectorAll('input, select, textarea').forEach(input => {
+                    input.style.fontSize = '16px';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
