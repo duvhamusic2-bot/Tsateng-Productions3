@@ -1,17 +1,16 @@
 # cloudbuild.yaml
 options:
   logging: CLOUD_LOGGING_ONLY
+  # OR specify logs bucket:
+  logsBucket: 'gs://focused-pipe-479715-s8-cloudbuild-logs'
 
 steps:
-  # Build the container
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/tsateng-productions:$COMMIT_SHA', '.']
   
-  # Push to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/tsateng-productions:$COMMIT_SHA']
   
-  # Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args:
